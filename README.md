@@ -30,7 +30,10 @@ It is a place where you can share your thoughts with others, you can comment, an
 
 ## Tests
 
-THhe following instructions are how to run tests on this program: Click the deployed link in the readme 
+Open you console and type 'node server.js' and it will start locally on port 3001.
+
+Unfortunately, I could not get this deployed on heroku or working properly. This is a screenshot from the dashboard on the local port. 
+!(Screenshot)[assets/dashboard.PNG]
 
 
 
