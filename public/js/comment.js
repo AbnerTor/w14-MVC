@@ -1,10 +1,13 @@
+const { response } = require("express");
+
 const commentFormHandler = async function(event) {
   event.preventDefault();
 
   const postId = document.querySelector('input[name="post-id"]').value;
-  const body = document.querySelector('textarea[name="comment-body"]').value;
 
-  if (body) {
+  const comment = document.querySelector('textarea[name="comment-body"]').value;
+
+  if (comment) {
     await fetch('/api/comment', {
       method: 'POST',
       body: JSON.stringify({
@@ -15,8 +18,12 @@ const commentFormHandler = async function(event) {
         'Content-Type': 'application/json'
       }
     });
+    if(response.ok) {
+      document.location.reload()
+    } else {
+      alert(response.statusText)
+    }
 
-    document.location.reload();
   }
 };
 
