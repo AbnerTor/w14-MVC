@@ -14,11 +14,7 @@ Comment.init(
         commentContent: {
             type: DataTypes.STRING
         },
-        // dateCreated: {
-        //     type: DataTypes.DATEONLY,
-        //     allowNull: false,
-        //     defaultValue: DataTypes.NOW,
-        // },
+
         userId: {
             type: DataTypes.INTEGER,
             references: {
