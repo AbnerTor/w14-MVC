@@ -34,7 +34,7 @@ Open you console and type 'node server.js' and it will start locally on port 300
 
 Unfortunately, I could not get this deployed on heroku or working properly. This is a screenshot from the dashboard on the local port.
 
-!(Screenshot)[assets/dashboard.PNG]
+![dashboardScreenshot](assets/dashboard.PNG)
 
 
 
